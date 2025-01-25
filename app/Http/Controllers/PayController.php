@@ -16,27 +16,33 @@ class PayController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
-            'product' => 'required|string',
-            'schoolLevel' => 'required|string',
-            'payment_method' => 'required|string',
+            'judul' => 'required|string|max:255',
+            'deskripsi_tugas' => 'required|string|max:1000',
+            'deadline' => 'required|date',
+            'jumlah_halaman' => 'required|integer|min:1',
+            'schoolLevel' => 'required|string|max:50',
+            'payment_method' => 'required|string|max:50',
         ]);
 
         // no admin
-        $wa_admin = '6281238478677';
+        $wa_admin = '6281905390617';
 
-        $message = "
+        $message = trim("
         Halo Adminn!,
         Saya Mau JOKI TUGAS:
 
         - Nama : {$validated['name']}
-        - Product : {$validated['product']}
+        - Judul : {$validated['judul']}
+        - Deskripsi Tugas : {$validated['deskripsi_tugas']}
+        - Deadline : {$validated['deadline']}
+        - Jumlah Halaman : {$validated['jumlah_halaman']}
         - Tingkat Sekolah : {$validated['schoolLevel']}
         - Metode Pembayaran : {$validated['payment_method']}
 
         Mohon Diproses secepatnya ya min! Terimakasih 😊❤️
-        ";
+        ");
 
-        $encodedMessage = urlencode($message);
+        $encodedMessage = rawurlencode($message);
 
         $url = "https://wa.me/{$wa_admin}?text={$encodedMessage}";
 

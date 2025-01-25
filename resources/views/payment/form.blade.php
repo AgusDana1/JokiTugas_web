@@ -17,21 +17,38 @@
             <div>
                 <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nama Lengkap</label>
                 <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap Anda" 
-                       class="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" 
-                       required>
-            </div>
-
-            <!-- Pilih Produk -->
-            <div>
-                <label for="product" class="block text-sm font-medium text-gray-700 mb-1">Pilih Jasa Joki</label>
-                <select id="product" name="product" 
                     class="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" 
                     required>
-                    <option value="Tugas Sekolah umum">Tugas Sekolah umum</option>
-                    <option value="Buatin Tugas Matematika saya">Buatin Tugas Matematika saya</option>
-                    <option value="Buatin Tugas Excel saya">Buatin Tugas Excel saya</option>
-                    <option value="Buatin PowerPoint">Buatin PowerPoint</option>
-                </select>
+            </div>
+
+            {{-- Judul Tugas --}}
+            <div>
+                <label for="judul" class="block text-sm font-medium text-gray-700 mb-1">Judul Tugas</label>
+                <input type="text" id="judul" name="judul" placeholder="Masukkan Judul dari Tugas Anda" 
+                class="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" 
+                required>
+            </div>
+
+            {{-- Deskripsi Tugas --}}
+            <div>
+                <label for="deskripsi_tugas" class="block text-sm font-medium text-gray-700 mb-1">Deskripsi Tugas</label>
+                <textarea id="deskripsi_tugas" name="deskripsi_tugas" placeholder="Masukkan deskripsi tugas Anda" 
+                class="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 text-left" 
+                    rows="5" required></textarea>
+            </div>
+
+            {{-- Deadline Tugas --}}
+            <div>
+                <label for="deadline" class="block text-sm font-medium text-gray-700 mb-1">Deadline Tugas</label>
+                <input type="date" id="deadline" name="deadline" class="w-full mt-1 border rounded px-4 py-2" required>
+            </div>
+
+            {{-- Jumlah halaman Tugas --}}
+            <div>
+                <label for="jumlah_halaman" class="block text-sm font-medium text-gray-700 mb-1">Jumlah Halaman</label>
+                <input type="text" id="jumlah_halaman" name="jumlah_halaman" placeholder="Masukkan Jumlah halaman Tugas Anda" 
+                class="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" 
+                required>
             </div>
 
             {{-- Tingkatan sekolah --}}
@@ -54,7 +71,6 @@
                         required>
                     <option value="Transfer Bank">Transfer Bank</option>
                     <option value="E-Wallet">E-Wallet (Dana, Gopay, OVO)</option>
-                    <option value="PayPal">PayPal</option>
                 </select>
             </div>
 
@@ -62,7 +78,7 @@
             <div>
                 <button type="submit" 
                         class="w-full bg-blue-600 text-white py-3 rounded-md text-lg font-semibold hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition duration-200">
-                    Kirim ke WhatsApp Admin
+                    Submit
                 </button>
             </div>
         </form>
