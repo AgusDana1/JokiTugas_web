@@ -44,13 +44,15 @@
     </div>
 
     <!-- WhatsApp -->
+    <a href="https://wa.me/6285829226247" target="blank" rel="noopener noreferrer">
     <div class="w-40 h-40 sm:w-48 sm:h-48 bg-blue-500 text-white rounded-lg shadow-lg flex flex-col items-center justify-center">
       <div class="text-green-400 text-5xl sm:text-6xl mb-2">
         <i class="bi bi-whatsapp"></i>
       </div>
-      <h2 class="text-lg sm:text-xl font-normal">WA</h2>
+        <h2 class="text-lg sm:text-xl font-normal">WA</h2>
       <p class="text-xs sm:text-sm">+62 812 4356 3058</p>
     </div>
+  </a>
 
     <!-- Email -->
     <div class="w-40 h-40 sm:w-48 sm:h-48 bg-blue-500 text-white rounded-lg shadow-lg flex flex-col items-center justify-center">

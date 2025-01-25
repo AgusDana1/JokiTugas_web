@@ -22,7 +22,7 @@ class PayController extends Controller
         ]);
 
         // no admin
-        $wa_admin = '6285829226247';
+        $wa_admin = '6281238478677';
 
         $message = "
         Halo Adminn!,
