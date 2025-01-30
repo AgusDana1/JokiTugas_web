@@ -11,24 +11,30 @@
             <p class="font-poppins w-full lg:w-2/3">Joki Tugas adalah solusi bagi mereka yang memerlukan bantuan dalam menyelesaikan tugas-tugas sekolah. </p>
             <div class="flex flex-col gap-2 items-center lg:items-start">
                 <h1 class="bg-blue-500 text-white py-2 px-6 w-6/12 lg:w-3/12 text-center rounded-full">Layanan Kami:</h1>
-                <div class="flex gap-2 text-sm items-center">
-                    <i class="bi bi-check-circle-fill text-blue-700"></i>
-                    <p>Konsultasi gratis</p>
+                <div class="flex gap-2 text-sm items-center w-52 justify-center">
+                    <div class="w-2/3 flex gap-2">
+                        <i class="bi bi-check-circle-fill text-blue-700"></i>
+                        <p>Konsultasi gratis</p>
+                    </div>
                 </div>
-                <div class="flex gap-2 text-sm items-center">
-                    <i class="bi bi-check-circle-fill text-blue-700"></i>
-                    <p>Privasi terjaga</p>
+                <div class="flex gap-2 text-sm items-center justify-center w-52">
+                    <div class="w-2/3 flex gap-2">
+                        <i class="bi bi-check-circle-fill text-blue-700"></i>
+                        <p>Privasi gratis</p>
+                    </div>
                 </div>
-                <div class="flex gap-2 text-sm items-center">
-                    <i class="bi bi-check-circle-fill text-blue-700"></i>
-                    <p>Revisi gratis</p>
+                <div class="flex gap-2 text-sm items-center justify-center w-52">
+                    <div class="w-2/3 flex gap-2">
+                        <i class="bi bi-check-circle-fill text-blue-700"></i>
+                        <p>Revisi gratis</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     {{-- rectangle biru --}}
-    <div class="w-full bg-blue-800 h-3 shadow-lg"></div>
+    <div class="w-full bg-blue-500 h-3 shadow-lg"></div>
     {{-- wave --}}
     <img class="h-auto object-cover w-full" src="{{ asset('svg/wave-kebalik3.svg') }}" alt="">
 
@@ -118,7 +124,7 @@
                 </div>
 
                 <div class="w-3/5 flex items-center font-poppins justify-center py-3 px-10 bg-blue-500 hover:bg-blue-700 cursor-pointer text-white rounded-md">
-                    <a href="{{ route('payment.form') }}" target="blank">BELI</a>
+                    <a href="{{ route('payment.form') }}" target="blank">PESAN</a>
                 </div>
             </div>
 
@@ -133,7 +139,7 @@
                 </div>
 
                 <div class="w-3/5 flex items-center font-poppins justify-center py-3 px-10 bg-blue-500 hover:bg-blue-700 cursor-pointer text-white rounded-md">
-                    <a href="{{ route('payment.form') }}" target="blank">BELI</a>
+                    <a href="{{ route('payment.form') }}" target="blank">PESAN</a>
                 </div>
             </div>
 
@@ -148,7 +154,7 @@
                 </div>
 
                 <div class="w-3/5 flex items-center font-poppins justify-center py-3 px-10 bg-blue-500 hover:bg-blue-700 cursor-pointer text-white rounded-md">
-                    <a href="{{ route('payment.form') }}" target="blank">BELI</a>
+                    <a href="{{ route('payment.form') }}" target="blank">PESAN</a>
                 </div>
             </div>
         </div>
@@ -182,7 +188,7 @@
 
         <!-- Section 3 -->
         <div class="flex flex-col md:flex-row items-center bg-white shadow-md rounded-lg overflow-hidden">
-            <img src="{{ asset('img/Premium Photo _ Three asian girls in veils in school uniforms stand smiling using a laptop together while carrying b___.png') }}" alt="Revisi Gratis" class="w-full md:w-1/3 object-cover shadow-lg">
+            <img src="{{ asset('img/Premium Photo _ Three asian girls in veils in school uniforms stand smiling using a laptop together while carrying b___.png') }}" alt="Revisi Gratis" class="w-full md:w-1/3 object-cover">
             <div class="p-6">
                 <h2 class="text-2xl font-bold text-blue-600 mb-4">REVISI GRATIS GUYS</h2>
                 <p class="text-gray-700 leading-relaxed">

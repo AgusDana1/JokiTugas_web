@@ -50,7 +50,7 @@
         <i class="bi bi-whatsapp"></i>
       </div>
         <h2 class="text-lg sm:text-xl font-normal">WA</h2>
-      <p class="text-xs sm:text-sm">+62 812 4356 3058</p>
+      <p class="text-xs sm:text-sm">+62 858-2922-6247</p>
     </div>
   </a>
 

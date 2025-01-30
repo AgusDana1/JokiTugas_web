@@ -18,25 +18,23 @@ class PayController extends Controller
             'name' => 'required|string|max:255',
             'judul' => 'required|string|max:255',
             'deskripsi_tugas' => 'required|string|max:1000',
-            'deadline' => 'required|date',
-            'jumlah_halaman' => 'required|integer|min:1',
-            'schoolLevel' => 'required|string|max:50',
+            'deadline' => 'required|date_format:Y-m-d\TH:i', 'after:now',
+            'jumlah_halaman' => 'required|string|min:1',
             'payment_method' => 'required|string|max:50',
         ]);
 
         // no admin
-        $wa_admin = '6281905390617';
+        $wa_admin = '6285829226247';
 
         $message = trim("
         Halo Adminn!,
         Saya Mau JOKI TUGAS:
 
         - Nama : {$validated['name']}
-        - Judul : {$validated['judul']}
+        - Judul Tugas : {$validated['judul']}
         - Deskripsi Tugas : {$validated['deskripsi_tugas']}
-        - Deadline : {$validated['deadline']}
+        - Deadline Tugas : ". date('Y-m-d H:i', strtotime($validated['deadline'])) ."
         - Jumlah Halaman : {$validated['jumlah_halaman']}
-        - Tingkat Sekolah : {$validated['schoolLevel']}
         - Metode Pembayaran : {$validated['payment_method']}
 
         Mohon Diproses secepatnya ya min! Terimakasih 😊❤️

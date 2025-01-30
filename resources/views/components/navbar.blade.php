@@ -18,7 +18,7 @@
 
         {{-- Mobile Menu Button --}}
         <button class="md:hidden flex items-center" @click="open = !open">
-            <i class="bi bi-list text-2xl"></i>
+            <i class="bi bi-list text-4xl"></i>
         </button>
     </div>
 

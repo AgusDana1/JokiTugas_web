@@ -40,7 +40,7 @@
             {{-- Deadline Tugas --}}
             <div>
                 <label for="deadline" class="block text-sm font-medium text-gray-700 mb-1">Deadline Tugas</label>
-                <input type="date" id="deadline" name="deadline" class="w-full mt-1 border rounded px-4 py-2" required>
+                <input type="datetime-local" id="deadline" name="deadline" class="w-full mt-1 border rounded px-4 py-2" required>
             </div>
 
             {{-- Jumlah halaman Tugas --}}
@@ -49,18 +49,6 @@
                 <input type="text" id="jumlah_halaman" name="jumlah_halaman" placeholder="Masukkan Jumlah halaman Tugas Anda" 
                 class="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" 
                 required>
-            </div>
-
-            {{-- Tingkatan sekolah --}}
-            <div>
-                <label for="schoolLevel" class="block text-sm font-medium text-gray-700 mb-1">Pilih Tingkatan Sekolah</label>
-                <select id="schoolLevel" name="schoolLevel" 
-                    class="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" 
-                    required>
-                    <option value="SD">SD</option>
-                    <option value="SMP">SMP</option>
-                    <option value="SMA">SMA</option>
-                </select>
             </div>
 
             <!-- Metode Pembayaran -->
