@@ -17,7 +17,7 @@
         </div>
 
             {{-- rectangle biru --}}
-            <div class="w-full bg-blue-800 h-3 shadow-lg mt-8"></div>
+            <div class="w-full bg-blue-500 h-3 shadow-lg mt-8"></div>
             {{-- wave --}}
             <img class="h-auto object-cover w-full" src="{{ asset('svg/wave-kebalik3.svg') }}" alt="">
 
@@ -36,35 +36,35 @@
                 <!-- Grid Layout -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 mt-10">
                 <!-- Joki Tugas SD -->
-                <div class="flex flex-col items-center">
+                <div class="flex flex-col items-center bg-blue-500 rounded-xl p-4">
                     <img src="{{ asset('img/imgBlog/20 Things We Miss When We Leave Indonesia _ WowShack 1.png') }}" 
                     alt="Joki Tugas SD" 
                     class="rounded-lg w-5/6 md:w-full h-36 sm:h-48 lg:h-64 object-cover">
-                    <p class="mt-4 font-normal font-poppins text-lg">Joki Tugas SD</p>
+                    <p class="mt-4 font-bold text-white font-poppins text-lg">Joki Tugas SD</p>
                 </div>
 
                 <!-- Joki Tugas SMP -->
-                <div class="flex flex-col items-center">
+                <div class="flex flex-col items-center bg-blue-500 rounded-xl p-4">
                     <img src="{{ asset('img/imgBlog/7 Cara Masuk Perguruan Tinggi Negeri dengan Mudah.png') }}" 
                     alt="Joki Tugas SMP" 
                     class="rounded-lg w-5/6 md:w-full h-36 sm:h-48 lg:h-64 object-cover">
-                    <p class="mt-4 font-normal font-poppins text-lg">Joki Tugas SMP</p>
+                    <p class="mt-4 font-bold text-white font-poppins text-lg">Joki Tugas SMP</p>
                 </div>
 
                 <!-- Joki Tugas SMA/SMK -->
-                <div class="flex flex-col items-center mt-8">
+                <div class="flex flex-col items-center mt-8 bg-blue-500 rounded-xl p-4">
                     <img src="{{ asset('img/imgBlog/100 Contoh Soal Cerdas Cermat Pengetahuan Umum Disertai Jawabannya.png') }}" 
                     alt="Joki Tugas SMA/SMK" 
                     class="rounded-lg w-5/6 md:w-full h-36 sm:h-48 lg:h-64 object-cover">
-                    <p class="mt-4 font-normal font-poppins text-lg">Joki Tugas SMA/SMK</p>
+                    <p class="mt-4 font-bold text-white font-poppins text-lg">Joki Tugas SMA/SMK</p>
                 </div>
 
                 <!-- Revisi Gratis -->
-                <div class="flex flex-col items-center mt-8">
+                <div class="flex flex-col items-center mt-8 bg-blue-500 rounded-xl p-4">
                     <img src="{{ asset('img/imgBlog/download (2).png') }}" 
                     alt="Revisi Gratis" 
                     class="rounded-lg w-5/6 md:w-full h-36 sm:h-48 lg:h-64 object-cover">
-                    <p class="mt-4 font-normal font-poppins text-lg">Revisi Gratis</p>
+                    <p class="mt-4 font-bold text-white font-poppins text-lg">Revisi Gratis</p>
                 </div>
             </div>
         </div>

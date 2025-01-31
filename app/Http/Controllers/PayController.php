@@ -16,7 +16,7 @@ class PayController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
-            'judul' => 'required|string|max:255',
+            'mapel' => 'required|string|max:255',
             'deskripsi_tugas' => 'required|string|max:1000',
             'deadline' => 'required|date_format:Y-m-d\TH:i', 'after:now',
             'jumlah_halaman' => 'required|string|min:1',
@@ -31,7 +31,7 @@ class PayController extends Controller
         Saya Mau JOKI TUGAS:
 
         - Nama : {$validated['name']}
-        - Judul Tugas : {$validated['judul']}
+        - Mata Pelajaran : {$validated['mapel']}
         - Deskripsi Tugas : {$validated['deskripsi_tugas']}
         - Deadline Tugas : ". date('Y-m-d H:i', strtotime($validated['deadline'])) ."
         - Jumlah Halaman : {$validated['jumlah_halaman']}

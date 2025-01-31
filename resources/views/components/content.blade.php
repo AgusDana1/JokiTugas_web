@@ -1,5 +1,5 @@
 <div class="mt-28 flex flex-col items-center">
-    {{-- jasa Joki TUgas TOLONG DI RESPONSIFKAN BAGIAN INI SAJAAA!!! --}}
+    {{-- jasa Joki Tugas TOLONG DI RESPONSIFKAN BAGIAN INI SAJAAA!!! --}}
     <div class="w-full flex flex-wrap lg:flex-nowrap gap-10 p-10">
         <div class="w-full lg:w-1/2 flex justify-center lg:justify-end p-3">
             <div class="w-60 h-60 rounded-full overflow-hidden shadow-lg">
@@ -11,22 +11,24 @@
             <p class="font-poppins w-full lg:w-2/3">Joki Tugas adalah solusi bagi mereka yang memerlukan bantuan dalam menyelesaikan tugas-tugas sekolah. </p>
             <div class="flex flex-col gap-2 items-center lg:items-start">
                 <h1 class="bg-blue-500 text-white py-2 px-6 w-6/12 lg:w-3/12 text-center rounded-full">Layanan Kami:</h1>
-                <div class="flex gap-2 text-sm items-center w-52 justify-center">
-                    <div class="w-2/3 flex gap-2">
-                        <i class="bi bi-check-circle-fill text-blue-700"></i>
-                        <p>Konsultasi gratis</p>
+                <div class="">
+                    <div class="flex gap-2 text-sm items-center w-52 md:justify-start justify-center">
+                        <div class="w-2/3 flex gap-2">
+                            <i class="bi bi-check-circle-fill text-blue-700"></i>
+                            <p>Konsultasi gratis</p>
+                        </div>
                     </div>
-                </div>
-                <div class="flex gap-2 text-sm items-center justify-center w-52">
-                    <div class="w-2/3 flex gap-2">
-                        <i class="bi bi-check-circle-fill text-blue-700"></i>
-                        <p>Privasi gratis</p>
+                    <div class="flex gap-2 text-sm items-center md:justify-start justify-center w-52">
+                        <div class="w-2/3 flex gap-2 ">
+                            <i class="bi bi-check-circle-fill text-blue-700"></i>
+                            <p>Privasi gratis</p>
+                        </div>
                     </div>
-                </div>
-                <div class="flex gap-2 text-sm items-center justify-center w-52">
-                    <div class="w-2/3 flex gap-2">
-                        <i class="bi bi-check-circle-fill text-blue-700"></i>
-                        <p>Revisi gratis</p>
+                    <div class="flex gap-2 text-sm items-center md:justify-start justify-center w-52">
+                        <div class="w-2/3 flex gap-2">
+                            <i class="bi bi-check-circle-fill text-blue-700"></i>
+                            <p>Revisi gratis</p>
+                        </div>
                     </div>
                 </div>
             </div>

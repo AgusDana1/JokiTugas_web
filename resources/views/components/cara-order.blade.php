@@ -36,7 +36,7 @@
     </div>
   </div>
 
-  <div class="w-full bg-blue-800 h-3 shadow-lg"></div>
+  <div class="w-full bg-blue-500 h-3 shadow-lg"></div>
 
   {{-- Order Sheets Si Joki Tugas Dengan Mudah --}}
   <div class="max-w-4xl mx-auto p-8">
