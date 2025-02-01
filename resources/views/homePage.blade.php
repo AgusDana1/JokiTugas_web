@@ -14,5 +14,5 @@
 
 {{-- Footer --}}
 @section('footer')
-
+    <x-footer-components></x-footer-components>
 @endsection

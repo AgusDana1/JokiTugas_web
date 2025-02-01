@@ -14,7 +14,7 @@
                 <i class="bi bi-arrow-left p-2 px-3 w-23"></i>
             </a>
             <h1 class="text-3xl font-bold mb-6 text-blue-600 text-center">SHEETS Si Joki Tugas</h1>
-            <p class="text-gray-500 text-center mb-8">Silakan lengkapi form di bawah ini</p>
+            <p class="text-gray-500 text-center mb-8">Silakan lengkapi form Pembayaran di bawah ini</p>
     
             <form action="{{ route('payment.process') }}" method="POST" class="space-y-6">
                 @csrf
@@ -37,7 +37,7 @@
                 {{-- Deskripsi Tugas --}}
                 <div>
                     <label for="deskripsi_tugas" class="block text-sm font-medium text-gray-700 mb-1">Deskripsi Tugas</label>
-                    <textarea id="deskripsi_tugas" name="deskripsi_tugas" placeholder="Masukkan deskripsi tugas Anda" 
+                    <textarea id="deskripsi_tugas" name="deskripsi_tugas" placeholder="Masukkan Kesulitan apa yang ada pada Mata Pelajaran yang anda pilih" 
                     class="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 text-left" 
                         rows="5" required></textarea>
                 </div>
