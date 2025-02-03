@@ -16,7 +16,7 @@
             <h1 class="text-3xl font-bold mb-6 text-blue-600 text-center">SHEETS Si Joki Tugas</h1>
             <p class="text-gray-500 text-center mb-8">Silakan lengkapi form Pembayaran di bawah ini</p>
     
-            <form action="{{ route('payment.process') }}" method="POST" class="space-y-6">
+            <form action="{{ route('payment.process') }}" method="POST" enctype="multipart/form-data" class="space-y-6">
                 @csrf
                 <!-- Nama -->
                 <div>
@@ -26,7 +26,7 @@
                         required>
                 </div>
     
-                {{-- Judul Tugas --}}
+                {{-- Mata Pelajaran --}}
                 <div>
                     <label for="mapel" class="block text-sm font-medium text-gray-700 mb-1">Mata Pelajaran</label>
                     <input type="text" id="mapel" name="mapel" placeholder="Masukkan Mata Pelajaran dari Tugas Anda" 
@@ -37,9 +37,16 @@
                 {{-- Deskripsi Tugas --}}
                 <div>
                     <label for="deskripsi_tugas" class="block text-sm font-medium text-gray-700 mb-1">Deskripsi Tugas</label>
-                    <textarea id="deskripsi_tugas" name="deskripsi_tugas" placeholder="Masukkan Kesulitan apa yang ada pada Mata Pelajaran yang anda pilih" 
+                    <textarea id="deskripsi_tugas" name="deskripsi_tugas" placeholder="Masukkan Kesulitan apa yang ada pada Mata Pelajaran yang Anda pilih" 
                     class="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 text-left" 
                         rows="5" required></textarea>
+                </div>
+
+                {{-- Upload Foto Tugas --}}
+                <div>
+                    <label for="image" class="block text-sm font-medium text-gray-700 mb-1">Upload Foto Tugas</label>
+                    <input type="file" id="image" name="image" accept="image/*"
+                    class="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
                 </div>
     
                 {{-- Deadline Tugas --}}
@@ -51,7 +58,7 @@
                 {{-- Jumlah halaman Tugas --}}
                 <div>
                     <label for="jumlah_halaman" class="block text-sm font-medium text-gray-700 mb-1">Jumlah Halaman</label>
-                    <input type="text" id="jumlah_halaman" name="jumlah_halaman" placeholder="Masukkan Jumlah halaman Tugas Anda" 
+                    <input type="number" id="jumlah_halaman" name="jumlah_halaman" placeholder="Masukkan Jumlah Halaman Tugas Anda" 
                     class="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" 
                     required>
                 </div>
@@ -71,7 +78,7 @@
                 <div>
                     <button type="submit" 
                             class="w-full bg-blue-600 text-white py-3 rounded-md text-lg font-semibold hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition duration-200">
-                        Submit
+                        Pesan Sekarang
                     </button>
                 </div>
             </form>

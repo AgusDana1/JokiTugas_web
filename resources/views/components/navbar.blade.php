@@ -3,8 +3,8 @@
         <div class="flex items-center space-x-4 ml-4">
             <img class="rounded-full w-14 h-14" src="{{ asset('img/SHEETS LOGO1.jpg') }}" alt="Logo Sheets si Joki Tugas">
             <div>
-                <h2 class="text-blue-600 font-semibold">Sheets Si Joki Tugas</h2>
-                <p class="font-light text-sm">Joki tugas sekolah anda</p>
+                <h2 class="text-blue-600 font-semibold">Sheets Si Teman Tugasmu</h2>
+                <p class="font-light text-sm">Si Teman tugas anda</p>
             </div>
         </div>
 
