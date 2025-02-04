@@ -2,8 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PayController;
-use App\Http\Controllers\AdminController;
+use App\Http\Middleware\RoleMiddleware;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\OrderController;
 
 Route::get('/', function () {
     return view('homePage');
@@ -23,16 +25,20 @@ Route::get('/contact', function () {
 })->name('contact');
 
 Route::get('/payment', [PayController::class, 'showForm'])->name('payment.form');
-Route::post('/payment', [PayController::class, 'processPay'])->name('payment.process');
+Route::post('/payment', [PayController::class, 'processPay'])->name('payment.page');
 
 // hanya untuk admin
-Route::middleware(['auth', 'role:admin'])->group(function () {
+Route::middleware(RoleMiddleware::class.':admin')->group(function () {
     Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
     Route::get('/admin/orders/{id}', [AdminController::class, 'showOrder'])->name('order.show');
 });
 
+Route::middleware(RoleMiddleware::class.':admin')->prefix('admin')->group(function () {
+    Route::patch('/orders/{order}/update-status', [OrderController::class, 'updateStatus'])->name('admin.updateOrderStatus');
+});
+
 // Hanya untuk penjoki
-Route::middleware(['auth', 'role:penjoki'])->group(function () {
+Route::middleware(RoleMiddleware::class.':penjoki')->group(function () {
     Route::get('/penjoki/dashboard', function () {
         return view('penjoki.dashboard');
     })->name('penjoki.dashboard');

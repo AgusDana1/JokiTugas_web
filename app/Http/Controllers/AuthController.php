@@ -2,13 +2,33 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Http\Request;
+use App\Models\User;
+use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
+    public function showLogin()
+    {
+        return view('auth.login');
+    }
+
+    public function login(Request $request)
+    {
+        $request->validate([
+            'email' => 'required|email',
+            'password' => 'required',
+        ]);
+
+        if(Auth::attempt($request->only('email', 'password'))) {
+            return redirect()->route('home');
+        }
+
+        return back()->withErrors(['email' => 'Invalid email or Password']);
+    }
+
     public function showRegister()
     {
         return view('auth.register');
@@ -18,52 +38,23 @@ class AuthController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
-            'email' => 'required|email|string|unique:users',
+            'email' => 'required|email|unique:users',
             'password' => 'required|min:6|confirmed',
         ]);
 
-        User::create([
+        $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
-            'password' => Hash::make($request->password),
-            'role' => 'user'
+            'password' => Hash::make($request->password)
         ]);
 
-        return redirect()->route('login')->with('success', 'Registrasi Berhasil!');
+        Auth::login($user);
+        return redirect()->route('home');
     }
 
-    public function showLogin()
-    {
-        return view("auth.login");
-    }
-
-    public function login(Request $request)
-    {
-        $credentials = $request->validate([
-            'email' => 'required|email',
-            'password' => 'required',
-        ]);
-
-        if (Auth::attempt($credentials))
-        {
-            $user = Auth::user();
-
-            if ($user->role == 'admin') {
-                return redirect()->route('admin.dashboard');
-            } elseif ($user->role == 'penjoki') {
-                return redirect()->route('penjoki.dashboard');
-            } else {
-                return redirect()->route('home');
-            }
-        }
-
-        return back()->withErrors(['email' => 'Email atau Password salah!']);
-    }
-
-    // Logout
     public function logout()
     {
         Auth::logout();
-        return redirect()->route('login');
+        return redirect()->route('home');
     }
 }

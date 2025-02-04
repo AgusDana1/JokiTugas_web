@@ -15,6 +15,11 @@
             <li><a href="/blog" class="{{ request()->is('blog') ? 'text-blue-600 font-semibold' : 'text-gray-900 font-semibold hover:text-blue-600' }}">Blog</a></li>
             <li><a href="/contact" class="{{ request()->is('contact') ? 'text-blue-600 font-semibold' : 'text-gray-900 font-semibold hover:text-blue-600' }}">Contact Us</a></li>
             <li><a href="/payment" class="{{ request()->is('payment') ? 'text-blue-600 font-semibold' : 'text-gray-900 font-semibold hover:text-blue-600' }}">Order</a></li>
+
+            {{-- Hanya tampilkan Order jika user adalah admin --}}
+            @can('admin')
+                <li><a href="/admin/dashboard" class="{{ request()->is('admin/dashboard') ? 'text-blue-600 font-semibold' : 'text-gray-900 font-semibold hover:text-blue-600' }}">Dashboard Admin</a></li>
+            @endcan
         </ul>
 
         {{-- Mobile Menu Button --}}
@@ -31,6 +36,10 @@
             <li><a href="/blog" class="{{ request()->is('blog') ? 'text-blue-600 font-semibold' : 'text-gray-900 font-semibold hover:text-blue-600' }}">Blog</a></li>
             <li><a href="/contact" class="{{ request()->is('contact') ? 'text-blue-600 font-semibold' : 'text-gray-900 font-semibold hover:text-blue-600' }}">Contact Us</a></li>
             <li><a href="/payment" class="{{ request()->is('payment') ? 'text-blue-600 font-semibold' : 'text-gray-900 font-semibold hover:text-blue-600' }}">Order</a></li>
+            {{-- Hanya tampilkan Order jika user adalah admin --}}
+            @can('admin')
+                <li><a href="/admin/dashboard" class="{{ request()->is('admin/dashboard') ? 'text-blue-600 font-semibold' : 'text-gray-900 font-semibold hover:text-blue-600' }}">Dashboard Admin</a></li>
+            @endcan
         </ul>
     </div>
 </nav>

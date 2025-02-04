@@ -16,7 +16,7 @@
             <h1 class="text-3xl font-bold mb-6 text-blue-600 text-center">SHEETS Si Joki Tugas</h1>
             <p class="text-gray-500 text-center mb-8">Silakan lengkapi form Pembayaran di bawah ini</p>
     
-            <form action="{{ route('payment.process') }}" method="POST" enctype="multipart/form-data" class="space-y-6">
+            <form action="{{ route('payment.page') }}" method="POST" enctype="multipart/form-data" class="space-y-6">
                 @csrf
                 <!-- Nama -->
                 <div>

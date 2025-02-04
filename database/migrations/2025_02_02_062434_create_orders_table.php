@@ -13,11 +13,12 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('users_id')->constrained()->onDelete('cascade');
-            $table->string('subject'); // mapel
-            $table->text('description');
-            $table->integer('page_count'); // jumlah halaman
-            $table->dateTime('deadline'); // deadline
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
+            $table->string('mapel');
+            $table->text('deskripsi_tugas');
+            $table->integer('jumlah_halaman');
+            $table->dateTime('deadline');
+            $table->string('image');
             $table->string('payment_method');
             $table->enum('status', ['pending', 'paid', 'completed'])->default('pending');
             $table->timestamps();

@@ -29,7 +29,7 @@ class NewOrderNotification extends Notification
     public function toDatabase($notifiable)
     {
         return [
-            'message' => "Pesanan baru di {$this->order->user->name}",
+            'message' => "Pesanan baru di " . ($this->order->user?->name ?? 'Guest'),
             'order_id' => $this->order->id,
             'status' => $this->order->status,
         ];
