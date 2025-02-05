@@ -4,7 +4,7 @@
       <div class="lg:w-2/3 text-center lg:text-left">
         <h1 class="font-extrabold font-poppins text-blue-700 text-4xl">CONTACT US</h1>
         <p class="text-gray-950 mt-4">
-          Bergabunglah bersama kami di Sheets Si Joki Tugas dan jadilah bagian dari tim profesional yang membantu ribuan siswa dan siswi meraih kesuksesan akademik! Jika Anda memiliki keahlian di bidang penulisan, analisis, atau penyelesaian tugas akademik, inilah kesempatan Anda untuk mengembangkan potensi sekaligus mendapatkan penghasilan tambahan. Bersama Sheets Si Joki Tugas, kita tidak hanya bekerja, tetapi juga memberikan dampak positif bagi dunia pendidikan!
+          Bergabunglah bersama kami di Sheets Si Teman Tugasmu dan jadilah bagian dari tim profesional yang membantu ribuan siswa dan siswi meraih kesuksesan akademik! Jika Anda memiliki keahlian di bidang penulisan, analisis, atau penyelesaian tugas akademik, inilah kesempatan Anda untuk mengembangkan potensi sekaligus mendapatkan penghasilan tambahan. Bersama Sheets Si Teman Tugasmu, kita tidak hanya bekerja, tetapi juga memberikan dampak positif bagi dunia pendidikan!
         </p>
       </div>
     

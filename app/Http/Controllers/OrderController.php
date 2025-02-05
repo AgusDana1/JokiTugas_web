@@ -56,6 +56,7 @@ class OrderController extends Controller
         {
             $p->notify(new NewOrderNotification($order));
         }
+
         return redirect()->route('payment.page', ['order' => $order->id]);
     }
 

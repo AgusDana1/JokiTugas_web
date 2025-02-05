@@ -10,18 +10,18 @@
 <div class="container mx-auto mt-28">
     <div class="flex justify-between">
         <h1 class="text-3xl font-bold mb-6 text-blue-600 px-6">Admin Dashboard</h1>
-        <i class="bi bi-bell text-2xl px-4 py-2"></i>
+        <i class="bi bi-bell text-2xl px-4 py-2 cursor-pointer"></i>
     </div>
 
     <!-- Notifikasi -->
     <div class="mb-6">
         <ul class="bg-white shadow-md rounded-lg p-2">
-            @foreach(auth()->user()->notifications as $notification)
-                {{-- <li class="border-b p-2">
+            {{-- @foreach(auth()->user()->notifications as $notification)
+                <li class="border-b p-2">
                     {{ $notification->data['message'] }} 
                     <a href="{{ route('order.show', $notification->data['order_id']) }}" class="text-blue-500">Lihat</a>
-                </li> --}}
-            @endforeach
+                </li>
+            @endforeach --}}
         </ul>
     </div>
 

@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PayController;
 use App\Http\Middleware\RoleMiddleware;
@@ -16,10 +17,12 @@ Route::get('/caraOrder', function () {
     return view('caraOrder');
 })->name('caraOrder');
 
+// blog page
 Route::get('/blog', function () {
     return view('blog');
 })->name('blog');
 
+// contact page
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
@@ -33,6 +36,7 @@ Route::middleware(RoleMiddleware::class.':admin')->group(function () {
     Route::get('/admin/orders/{id}', [AdminController::class, 'showOrder'])->name('order.show');
 });
 
+// logic route admin untuk update status pending/paid/completed
 Route::middleware(RoleMiddleware::class.':admin')->prefix('admin')->group(function () {
     Route::patch('/orders/{order}/update-status', [OrderController::class, 'updateStatus'])->name('admin.updateOrderStatus');
 });

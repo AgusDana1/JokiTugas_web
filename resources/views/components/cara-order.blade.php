@@ -4,7 +4,7 @@
         <div class="text-center py-8 z-10">
             <h1 class="text-3xl font-serif italic text-gray-800">Cara Order</h1>
             <h2 class="text-4xl font-bold text-blue-600 mt-2">
-            Sheets Si Joki Tugas
+            Sheets Si Teman Tugasmu
             </h2>
         </div>
     
@@ -41,17 +41,17 @@
   {{-- Order Sheets Si Joki Tugas Dengan Mudah --}}
   <div class="max-w-4xl mx-auto p-8">
     <h1 class="text-center text-2xl font-bold text-blue-600 mb-0">
-        Order Sheets Si Joki
+        Order Sheets Si Teman
     </h1>
     <h2 class="text-center text-2xl font-bold text-blue-600 mb-7">
-        Tugas dengan mudah
+        Tugasmu dengan mudah
     </h2>
     
     <div class="space-y-8">
         <!-- Langkah 1 -->
         <div>
             <h3 class="text-xl font-bold text-blue-600 mb-4">
-                1. Kunjungi Website Sheets Si Joki Tugas
+                1. Kunjungi Website Sheets Si Teman Tugasmu
             </h3>
             <p class="text-gray-700">
                 Langkah pertama adalah mengunjungi website resmi kami. Di halaman utama, Anda akan menemukan informasi lengkap mengenai layanan yang kami tawarkan serta cara menghubungi tim kami.

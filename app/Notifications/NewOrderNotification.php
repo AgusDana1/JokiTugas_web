@@ -4,9 +4,10 @@ namespace App\Notifications;
 
 use App\Models\Order;
 use Illuminate\Bus\Queueable;
+use Illuminate\Broadcasting\Channel;
 use Illuminate\Notifications\Notification;
-use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Messages\DatabaseMessage;
 
 class NewOrderNotification extends Notification
@@ -33,5 +34,16 @@ class NewOrderNotification extends Notification
             'order_id' => $this->order->id,
             'status' => $this->order->status,
         ];
+    }
+
+    // admin monitoring secara realtime
+    public function broadcastOn()
+    {
+        return new Channel('orders');
+    }
+
+    public function broadcastAs()
+    {
+        return 'new-order';
     }
 }

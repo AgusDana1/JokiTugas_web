@@ -13,10 +13,10 @@
         {{-- Joki Tugas untuk anak sekolah --}}
         <div>
             <h1 class="text-center text-2xl font-normal text-gray-950 mb-0">
-                Joki Tugas
+                Sheets Si Teman Tugasmu
             </h1>
             <h2 class="text-center text-3xl font-bold text-gray-950 mb-0">
-                Jasa Joki tugas anak
+                Tuntaskan tugas anak
             </h2>
             <h2 class="text-center text-3xl font-bold text-gray-950 mb-7">
                 sekolah dari SD - SMA
@@ -29,7 +29,7 @@
                 <img src="{{ asset('img/imgBlog/20 Things We Miss When We Leave Indonesia _ WowShack 1.png') }}" 
                 alt="Joki Tugas SD" 
                 class="rounded-lg w-5/6 md:w-full h-36 sm:h-48 lg:h-64 object-cover">
-                <p class="mt-4 font-bold text-white font-poppins text-lg">Joki Tugas SD</p>
+                <p class="mt-4 font-bold text-white font-poppins text-lg">Menyelesaikan Tugas SD</p>
             </div>
 
             <!-- Joki Tugas SMP -->
@@ -37,7 +37,7 @@
                 <img src="{{ asset('img/imgBlog/7 Cara Masuk Perguruan Tinggi Negeri dengan Mudah.png') }}" 
                 alt="Joki Tugas SMP" 
                 class="rounded-lg w-5/6 md:w-full h-36 sm:h-48 lg:h-64 object-cover">
-                <p class="mt-4 font-bold text-white font-poppins text-lg">Joki Tugas SMP</p>
+                <p class="mt-4 font-bold text-white font-poppins text-lg">Menyelesaikan Tugas SMP</p>
             </div>
 
             <!-- Joki Tugas SMA/SMK -->
@@ -45,7 +45,7 @@
                 <img src="{{ asset('img/imgBlog/100 Contoh Soal Cerdas Cermat Pengetahuan Umum Disertai Jawabannya.png') }}" 
                 alt="Joki Tugas SMA/SMK" 
                 class="rounded-lg w-5/6 md:w-full h-36 sm:h-48 lg:h-64 object-cover">
-                <p class="mt-4 font-bold text-white font-poppins text-lg">Joki Tugas SMA/SMK</p>
+                <p class="mt-4 font-bold text-white font-poppins text-lg">Menyelesaikan Tugas SMA/SMK</p>
             </div>
 
             <!-- Revisi Gratis -->
@@ -61,10 +61,10 @@
     {{-- Penjelasan tentang Jasa Joki Tugas --}}
     <div class="mt-16">
         <h2 class="text-center text-xl md:text-3xl font-bold text-gray-950 mb-0">
-            Penjelasan Tentang Jasa
+            Penjelasan Tentang Sheets Si
         </h2>
         <h2 class="text-center text-xl md:text-3xl font-bold text-gray-950 mb-20"> 
-            Joki Tugas
+            Teman Tugasmu
         </h2>
 
         <div class="w-full flex flex-wrap lg:flex-nowrap p-6">
@@ -78,7 +78,7 @@
             <!-- Teks -->
             <div class="w-full lg:w-1/2 flex items-center lg:justify-start px-8">
                 <p class="font-poppins w-full lg:w-1/2 text-sm text-center lg:text-left leading-relaxed">
-                    Di Sheets Si Joki Tugas kamu bisa dibuatkan tugas individu ataupun kelompok mulai dari tugas makalah, ppt ataupun tugas rumah, dan tugas akan dikerjakan oleh orang yang ahli dan profesional dalam bidangnya.
+                    Di Sheets Si Teman Tugasmu bisa dibuatkan tugas secara individu ataupun kelompok mulai dari tugas makalah, ppt ataupun tugas rumah, dan tugas akan dikerjakan oleh orang yang ahli dan profesional dalam bidangnya.
                 </p>
             </div>
         </div>
@@ -94,7 +94,7 @@
             <!-- Teks -->
             <div class="w-full lg:w-1/2 flex items-center lg:justify-start px-8">
                 <p class="font-poppins w-full lg:w-1/2 text-sm text-center lg:text-left leading-relaxed">
-                    Di Sheets Si Joki Tugas kamu dapat melakukan revisi secara gratis tanpa ada biaya tambahan, dan juga para pekerja akan menyesuaikan apa yang kamu minta.
+                    Di Sheets Si Teman Tugasmu dapat melakukan revisi secara gratis tanpa ada biaya tambahan, dan juga para pekerja akan menyesuaikan apa yang kamu minta.
                 </p>
             </div>
         </div>

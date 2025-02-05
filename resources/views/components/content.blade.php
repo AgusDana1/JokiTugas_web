@@ -7,8 +7,8 @@
             </div>
         </div>
         <div class="w-full lg:w-1/2 flex flex-col gap-2 text-center lg:text-left">
-            <h1 class="font-semibold text-2xl md:text-3xl w-full lg:w-2/3">Joki Tugas Murah, Pengerjaan Terjamin & Hasil Memuaskan!</h1>
-            <p class="font-poppins w-full lg:w-2/3">Joki Tugas adalah solusi bagi mereka yang memerlukan bantuan dalam menyelesaikan tugas-tugas sekolah. </p>
+            <h1 class="font-semibold text-2xl md:text-3xl w-full lg:w-2/3">Pricelist Murah, Pengerjaan Terjamin & Hasil Memuaskan!</h1>
+            <p class="font-poppins w-full lg:w-2/3">Sheets Si Teman Tugasmu adalah solusi dalam menyelesaikan tugas sekolah. </p>
             <div class="flex flex-col gap-2 items-center lg:items-start">
                 <h1 class="bg-blue-500 text-white py-2 px-6 w-6/12 lg:w-3/12 text-center rounded-full">Layanan Kami:</h1>
                 <div class="">
@@ -55,7 +55,7 @@
             <div style="font-size: 60px">
                 <i class="bi bi-cash-coin"></i>
             </div>
-            <p class="text-center font-semibold text-md">Harga murah cuy</p>
+            <p class="text-center font-semibold text-md">Harga murah</p>
         </div>
 
         <!-- Card 3 -->
@@ -75,19 +75,19 @@
                 <div class="w-full h-60 overflow-hidden">
                     <img class="rounded-md object-cover w-full h-full" src="{{ asset('img/akson-1K8pIbIrhkQ-unsplash.jpg') }}" alt="">
                 </div> 
-                <p class="font-poppins text-sm text-center">Joki Tugas Kelompok</p>
+                <p class="font-poppins text-sm text-center">Tugas Kelompok</p>
             </div>
             <div class="w-10/12 md:w-1/3 flex flex-col items-center gap-6">
                 <div class="w-full h-60 overflow-hidden">
                     <img class="rounded-md object-cover w-full h-full" src="{{ asset('img/andrew-neel-wClUbRMCBD8-unsplash.jpg') }}" alt="">
                 </div> 
-                <p class="font-poppins text-sm text-center">Joki Tugas Individu</p>
+                <p class="font-poppins text-sm text-center">Tugas Individu</p>
             </div>
             <div class="w-10/12 md:w-1/3 flex flex-col items-center gap-6">
                 <div class="w-full h-60 overflow-hidden">
                     <img class="rounded-md object-cover w-full h-full" src="{{ asset('img/herlambang-tinasih-gusti-nxXBUhe17L4-unsplash.jpg') }}" alt="">
                 </div> 
-                <p class="font-poppins text-sm text-center">Joki Tugas PPT & Makalah</p>
+                <p class="font-poppins text-sm text-center">Tugas PPT & Makalah</p>
             </div>
         </div>
     </div>
@@ -113,7 +113,7 @@
 
     {{-- Jenjang joki tugas yang kami kerjakan --}}
     <div class="mt-10 flex items-center flex-col w-5/6 md:w-4/5">
-        <h1 class="font-bold text-xs md:text-xl font-poppins">JENJANG JOKI TUGAS YANG BISA KAMI KERJAKAN</h1>
+        <h1 class="font-bold text-xs md:text-xl font-poppins">JENJANG SHEETS SI TEMAN TUGAS YANG BISA DI KERJAKAN</h1>
         <div class="flex flex-col md:flex-row gap-4 md:w-full p-10">
             <div class="w-full md:w-1/3 flex flex-col items-center gap-6 rounded-full">
                 <div class="w-full rounded-xl border shadow-xl relative overflow-hidden">
@@ -168,10 +168,9 @@
         <div class="flex flex-col md:flex-row items-center bg-white shadow-md rounded-lg overflow-hidden">
             <img src="{{ asset('img/ed-us-RwZzAcRmbbI-unsplash (1).jpg') }}" alt="Joki Murah" class="w-full md:w-1/3 object-cover rounded-br-xl rounded-bl-xl shadow-lg">
             <div class="p-6">
-                <h2 class="text-2xl font-bold text-blue-600 mb-4">JOKI DISINI MURAH GUYS</h2>
+                <h2 class="text-2xl font-bold text-blue-600 mb-4">MENYELESAIKAN TUGAS DISINI MURAH</h2>
                 <p class="text-gray-700 leading-relaxed">
                     Kamu yang mempunyai budget kurang? Atau pas-pasan? Tenang aja di sini harganya mulai 30 Ribu aja lho..
-                    So tunggu apalagi gaskan cuyyy.
                 </p>
             </div>
         </div>
@@ -183,7 +182,7 @@
                 <h2 class="text-2xl font-bold text-blue-600 mb-4">BERKUALITAS DAN TERPERCAYA</h2>
                 <p class="text-gray-700 leading-relaxed">
                     Apa takut tugasnya nilainya jelek? Atau takut jadinya lama? Tenang aja di sini kita punya tim profesional 
-                    yang berkualitas dan pasti tugas kamu bakal dikerjain secepat mungkin.. Jadi amaan aja cuyy.
+                    yang berkualitas dan pasti tugas kamu bakal dikerjain secepat mungkin!
                 </p>
             </div>
         </div>
@@ -192,9 +191,9 @@
         <div class="flex flex-col md:flex-row items-center bg-white shadow-md rounded-lg overflow-hidden">
             <img src="{{ asset('img/Premium Photo _ Three asian girls in veils in school uniforms stand smiling using a laptop together while carrying b___.png') }}" alt="Revisi Gratis" class="w-full md:w-1/3 object-cover">
             <div class="p-6">
-                <h2 class="text-2xl font-bold text-blue-600 mb-4">REVISI GRATIS GUYS</h2>
+                <h2 class="text-2xl font-bold text-blue-600 mb-4">REVISI GRATIS</h2>
                 <p class="text-gray-700 leading-relaxed">
-                    Apa tugasnya gak diterima guru? Atau kalian gak puas sama hasilnya? Santai di sini kalian bisa revisi tugas 
+                    Gimana? tugasnya gak diterima guru? Atau kalian gak puas sama hasilnya? Santai di sini kalian bisa revisi tugas 
                     kalian secara gratis.
                 </p>
             </div>
