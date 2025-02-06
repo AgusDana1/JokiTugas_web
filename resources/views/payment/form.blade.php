@@ -1,6 +1,6 @@
 @extends('layout.app')
 
-@section('title', "FORM Joki Tugas")
+@section('title', "Order Sheets si Teman Tugasmu")
 
 @section('navbar')
 <x-navbar></x-navbar>
@@ -70,10 +70,22 @@
                             class="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" 
                             required>
                         <option value="Transfer Bank">Transfer Bank</option>
-                        <option value="E-Wallet">E-Wallet (Dana, Gopay, OVO)</option>
+                        <option value="e-wallet">E-Wallet</option>
                     </select>
                 </div>
-    
+
+                <!-- Form opsi jika memilih E-wallet -->
+                <div id="e_wallet_options" class="hidden mt-3">
+                    <label for="e_wallet" class="block text-sm font-medium text-gray-700 mb-1">Pilih E-Wallet:</label>
+                    <select name="e_wallet" id="e_wallet" 
+                            class="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                        <option value="">-- Pilih E-Wallet --</option>
+                        <option value="dana">Dana</option>
+                        <option value="gopay">GoPay</option>
+                        <option value="ovo">OVO</option>
+                    </select>
+                </div>
+
                 <!-- Tombol Submit -->
                 <div>
                     <button type="submit" 
@@ -84,5 +96,40 @@
             </form>
         </div>
     </div>
+
+{{-- Script --}}
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let paymentMethod = document.getElementById('payment_method');
+        let eWalletOption = document.getElementById('e_wallet_options');
+        let form = document.getElementById('order-form');
+
+        // Tampilkan/hilangkan dropdown E-Wallet sesuai pilihan user
+        paymentMethod.addEventListener('change', function() {
+            if (this.value === 'e-wallet') {
+                eWalletOption.classList.remove('hidden');
+            } else {
+                eWalletOption.classList.add('hidden');
+            }
+        });
+
+        // Redirect ke halaman pembayaran yang sesuai saat submit
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            let selectedPayment = paymentMethod.value;
+            let selectedEwallet = document.getElementById('e_wallet').value;
+
+            if (selectedPayment === 'e-wallet' && !selectedEwallet) {
+                alert('Silakan pilih E-Wallet sebelum melanjutkan!');
+                return;
+            }
+
+            let paymentUrl = selectedPayment === 'e-wallet' ? `/payment/${selectedEwallet}` : '/payment/bank';
+
+            window.location.href = paymentUrl;
+        });
+    });
+    </script>
 </body>
 @endsection

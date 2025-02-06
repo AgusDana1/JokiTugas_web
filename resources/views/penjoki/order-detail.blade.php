@@ -2,9 +2,10 @@
 
 @section('title', 'Detail Pesanan')
 
+{{-- Order Desain Milik penjoki --}}
 @section('content')
 <div class="container mx-auto mt-10">
-    <a href="{{ route('admin.dashboard') }}">
+    <a href="{{ route('penjoki.dashboard') }}">
         <i class="bi bi-arrow-left p-2 px-3 w-23"></i>
     </a>
     <h1 class="text-3xl font-bold mb-6 text-blue-600">Detail Pesanan {{ $order->id }}</h1>

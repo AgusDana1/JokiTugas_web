@@ -57,6 +57,13 @@ class OrderController extends Controller
             $p->notify(new NewOrderNotification($order));
         }
 
+        // Redirect ke halaman pembayaran sesuai pilihan user
+        if ($request->payment_method === 'e_wallet') {
+            return redirect()->route('payment.ewallet', ['order_id' => $order->id, 'ewallet' => $request->e_wallet]);
+        } else {
+            return redirect()->route('payment.bank_transfer', ['order_id' => $order->id]);
+        }
+
         return redirect()->route('payment.page', ['order' => $order->id]);
     }
 

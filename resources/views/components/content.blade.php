@@ -7,7 +7,7 @@
             </div>
         </div>
         <div class="w-full lg:w-1/2 flex flex-col gap-2 text-center lg:text-left">
-            <h1 class="font-semibold text-2xl md:text-3xl w-full lg:w-2/3">Pricelist Murah, Pengerjaan Terjamin & Hasil Memuaskan!</h1>
+            <h1 class="font-semibold text-2xl md:text-3xl w-full lg:w-2/3">Harga Murah, Pengerjaan Terjamin & Terpercaya!</h1>
             <p class="font-poppins w-full lg:w-2/3">Sheets Si Teman Tugasmu adalah solusi dalam menyelesaikan tugas sekolah. </p>
             <div class="flex flex-col gap-2 items-center lg:items-start">
                 <h1 class="bg-blue-500 text-white py-2 px-6 w-6/12 lg:w-3/12 text-center rounded-full">Layanan Kami:</h1>
@@ -113,7 +113,7 @@
 
     {{-- Jenjang joki tugas yang kami kerjakan --}}
     <div class="mt-10 flex items-center flex-col w-5/6 md:w-4/5">
-        <h1 class="font-bold text-xs md:text-xl font-poppins">JENJANG SHEETS SI TEMAN TUGAS YANG BISA DI KERJAKAN</h1>
+        <h2 class="font-bold text-xs md:text-xl font-poppins w-1/2">Jenjang Sheets Si Teman Tugas Yang Dikerjakan</h2>
         <div class="flex flex-col md:flex-row gap-4 md:w-full p-10">
             <div class="w-full md:w-1/3 flex flex-col items-center gap-6 rounded-full">
                 <div class="w-full rounded-xl border shadow-xl relative overflow-hidden">

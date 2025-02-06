@@ -64,12 +64,12 @@
                 2. Pilih Layanan Yang Dibutuhkan
             </h3>
             <p class="text-gray-700">
-                Di bagian layanan, Anda akan melihat berbagai pilihan layanan joki tugas yang kami tawarkan, seperti:
+                Di bagian layanan, Anda akan melihat berbagai pilihan layanan penyelesaian tugas yang kami tawarkan, seperti:
             </p>
             <ul class="list-disc list-inside text-gray-700 space-y-1 mt-2">
-                <li>Joki Tugas SD</li>
-                <li>Joki Tugas SMP</li>
-                <li>Joki Tugas SMA/SMK</li>
+                <li>Tugas SD</li>
+                <li>Tugas SMP</li>
+                <li>Tugas SMA/SMK</li>
             </ul>
             <p class="text-gray-700 mt-2">
                 Pilih layanan yang sesuai dengan kebutuhan Anda. Setiap layanan dilengkapi dengan deskripsi yang jelas mengenai jenis tugas yang dapat kami bantu selesaikan.

@@ -1,6 +1,6 @@
 @extends('layout.app')
 
-@section('title', 'Admin Dashboard')
+@section('title', 'Penjoki Dashboard')
 
 @section('navbar')
     <x-navbar></x-navbar>
