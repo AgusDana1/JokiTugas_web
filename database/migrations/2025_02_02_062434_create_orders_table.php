@@ -19,7 +19,8 @@ return new class extends Migration
             $table->integer('jumlah_halaman');
             $table->dateTime('deadline');
             $table->string('image');
-            $table->string('payment_method');
+            $table->enum('payment_method', ['Transfer Bank', 'e-wallet']);
+            $table->enum('e_wallet', ['dana','gopay','ovo'])->nullable();
             $table->enum('status', ['pending', 'paid', 'completed'])->default('pending');
             $table->timestamps();
         });

@@ -29,7 +29,30 @@ class PayController extends Controller
             'image' => 'nullable|image|mimes:png,jpg,jpeg,gif,svg|max:2048',
             'jumlah_halaman' => 'required|integer|min:1',
             'payment_method' => 'required|string|max:50',
+            'e_wallet' => 'required|string|in:dana,gopay,ovo'
         ]);
+
+        // Simpan order terbaru
+        $order = Order::create([
+            'user_id' => Auth::id(),
+            'mapel' => $request->mapel,
+            'deskripsi_tugas' => $request->deskripsi_tugas,
+            'jumlah_halaman' => $request->jumlah_halaman,
+            'deadline' => $request->deadline,
+            'image' => $request->image,
+            'payment_method' => $request->payment_method,
+            'e_wallet' => $request->e_wallet,
+            'status' => 'pending',
+        ]);
+
+        if ($order->payment_method === 'e-wallet') {
+            if (!$order->e_wallet) {
+                return redirect()->back()->withErrors(['e_wallet' => 'Metode e-wallet harus dipilih!']);
+            }
+            return redirect()->route('payment.ewallet', ['order_id' => $order->id, 'ewallet' => $order->e_wallet]);
+        } else {
+            return redirect()->route('payment.bank_transfer', ['order_id' => $order->id]);
+        }
 
         // Simpan gambar jika ada
         if ($request->hasFile('image')) {
