@@ -96,7 +96,7 @@
     <div class="mt-10 flex flex-col md:flex-row gap-8 md:gap-10 bg-blue-500 w-2/3 md:w-2/3 p-5 rounded-md justify-evenly text-white">
         <div class="flex flex-col items-center">
             <i class="bi bi-mortarboard text-4xl"></i>
-            <p class="text-xl font-bold">10290</p>
+            <p class="text-xl font-bold">122</p>
             <p class="text-xl font-bold">Pengguna</p>
         </div>
         <div class="flex flex-col items-center">

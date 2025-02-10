@@ -12,7 +12,8 @@ return Application::configure(basePath: dirname(__DIR__))
         api: __DIR__.'/../routes/api.php',
     )
     ->withMiddleware(function (Middleware $middleware) {
-        //
+        \App\Http\Middleware\RoleMiddleware::class;
+        \App\Http\Middleware\ContentSecurityPolicy::class;
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //

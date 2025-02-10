@@ -1,10 +1,10 @@
 <footer class="bg-blue-500 text-white py-8">
     <div class="mx-auto flex flex-col items-center justify-center text-center">
         <div class="flex items-center space-x-3 mb-4">
-            <img src="{{ asset('img/SHEETS LOGO1.jpg') }}" alt="Logo" class="w-12 h-12 rounded-full">
+            <img src="{{ asset('img/SHEETS LOGO1.jpg') }}" alt="Logo" class="w-12 h-12 rounded-full drop-shadow-md">
             <div>
-                <h2 class="text-xl font-bold">Sheets Si Teman Tugasmu</h2>
-                <p class="text-sm">Menyelesaikan tugas anda dengan cepat dan tepat</p>
+                <h2 class="text-xl font-bold font-poppins">Sheets Si Teman Tugasmu</h2>
+                <p class="text-sm font-poppins">Menyelesaikan tugas anda dengan cepat dan tepat</p>
             </div>
         </div>
 
