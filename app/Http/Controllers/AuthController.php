@@ -22,7 +22,7 @@ class AuthController extends Controller
             'password' => 'required',
         ]);
 
-        if(Auth::attempt($request->only('email', 'password'))) {
+        if(Auth::attempt($request->only('email', 'password', 'checkbox'))) {
             return redirect()->route('home');
         }
 

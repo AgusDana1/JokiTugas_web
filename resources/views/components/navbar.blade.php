@@ -18,16 +18,19 @@
             <li><a href="/blog" class="{{ request()->is('blog') ? 'text-blue-600 font-semibold' : 'text-gray-900 font-semibold hover:text-blue-600' }}">Blog</a></li>
             <li><a href="/contact" class="{{ request()->is('contact') ? 'text-blue-600 font-semibold' : 'text-gray-900 font-semibold hover:text-blue-600' }}">Contact Us</a></li>
             <li><a href="/payment" class="{{ request()->is('payment') ? 'text-blue-600 font-semibold' : 'text-gray-900 font-semibold hover:text-blue-600' }}">Order</a></li>
+            <x-logout-component></x-logout-component>
             @endcan
 
             {{-- Hanya tampilkan Order jika user adalah admin --}}
             @can('admin')
                 <li><a href="/admin/dashboard" class="{{ request()->is('admin/dashboard') ? 'text-blue-600 font-semibold' : 'text-gray-900 font-semibold hover:text-blue-600' }}">Dashboard Admin</a></li>
+                <x-logout-component></x-logout-component>
             @endcan
 
             {{-- Hanya tampilkan dashboad Penjoki jika user adalah Penjoki --}}
             @can('penjoki')
             <li><a href="/penjoki/dashboard" class="{{ request()->is('penjoki/dashboard') ? 'text-blue-600 font-semibold' : 'text-gray-900 font-semibold hover:text-blue-600' }}">Dashboard Penjoki</a></li>
+            <x-logout-component></x-logout-component>
             @endcan
         </ul>
 
@@ -47,16 +50,19 @@
             <li><a href="/caraOrder" class="{{ request()->is('caraOrder') ? 'text-blue-600 font-semibold' : 'text-gray-900 font-semibold hover:text-blue-600' }}">How To Order</a></li>
             <li><a href="/blog" class="{{ request()->is('blog') ? 'text-blue-600 font-semibold' : 'text-gray-900 font-semibold hover:text-blue-600' }}">Blog</a></li>
             <li><a href="/contact" class="{{ request()->is('contact') ? 'text-blue-600 font-semibold' : 'text-gray-900 font-semibold hover:text-blue-600' }}">Contact Us</a></li>
+            <x-logout-component></x-logout-component>
             @endcan
 
             {{-- Hanya tampilkan dashboard admin jika user adalah admin dan order diclose --}}
             @can('admin')
                 <li><a href="/admin/dashboard" class="{{ request()->is('admin/dashboard') ? 'text-blue-600 font-semibold' : 'text-gray-900 font-semibold hover:text-blue-600' }}">Dashboard Admin</a></li>
+                <x-logout-component></x-logout-component>
             @endcan
 
             {{-- Hanya tampilkan dashboad Penjoki jika user adalah Penjoki --}}
             @can('penjoki')
             <li><a href="/penjoki/dashboard" class="{{ request()->is('penjoki/dashboard') ? 'text-blue-600 font-semibold' : 'text-gray-900 font-semibold hover:text-blue-600' }}">Dashboard Penjoki</a></li>
+            <x-logout-component></x-logout-component>
             @endcan
         </ul>
     </div>

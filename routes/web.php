@@ -7,6 +7,8 @@ use App\Http\Controllers\PayController;
 use App\Http\Middleware\RoleMiddleware;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\FeedbackController;
+use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PenjokiController;
 use Illuminate\Support\Facades\Request;
@@ -85,3 +87,12 @@ Route::post('/register', [AuthController::class, 'register']);
 Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+// Google id route
+Route::controller(GoogleController::class)->group(function () {
+    Route::get('auth/google', 'redirectToGoogle')->name('auth.google');
+    Route::get('auth/google/callback', 'handleGoogleCallback');
+});
+
+// route feedback dari user ke admin melalui email
+Route::post('/send-feedback', [FeedbackController::class, 'sendFeedback'])->name('send.feedback');
