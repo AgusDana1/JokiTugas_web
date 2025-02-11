@@ -23,7 +23,7 @@
     {{-- feedback & map --}}
     <section class="py-10 px-6 bg-blue-100 rounded-lg drop-shadow-lg">
       <div class="w-full mx-auto bg-white p-8 rounded-lg shadow-lg"> 
-        <h1 class="text-2xl font-bold font-poppins text-blue-700 mb-6">Berikan Feedback Anda</h1>
+        <h1 class="text-xl font-bold font-poppins text-blue-700 mb-6">Berikan Feedback Anda</h1>
 
         <div class="flex flex-col md:flex-row gap-8">
           {{-- Formulir Feedback --}}
@@ -33,12 +33,12 @@
               @csrf
               <div>
                 <label for="name" class="block text-sm font-medium text-gray-700">Nama:</label>
-                <input type="text" id="name" name="name" required class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                <input type="text" id="name" name="name" required class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" placeholder="Nama:">
               </div>
 
               <div>
                 <label for="message" class="block text-sm font-medium text-gray-700">Feedback Anda:</label>
-                <textarea name="message" id="message" rows="3" required class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"></textarea>
+                <textarea name="message" id="message" rows="3" required class="mt-1 block w-full px-2 py-1 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" placeholder="Feedback Anda:"></textarea>
               </div>
 
               <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-2 rounded-md hover:bg-blue-700">Kirim Feedback</button>
